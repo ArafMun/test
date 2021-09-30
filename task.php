@@ -8,7 +8,7 @@ $error = "";
     <div class="global-container">
         <div class="card login-form">
             <div class="card-body">
-                <h3 class="card-title text-center">Log in to Bondsten Technical Test</h3>
+                <h3 class="card-title text-center">Log in to Bondstein Technical Test</h3>
                 <div class="card-text">
 
                     <?php if ($error != '') { ?>
