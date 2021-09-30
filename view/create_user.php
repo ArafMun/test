@@ -24,7 +24,7 @@
                                     <h1>Create New user</h1>
                                 </div>
                                 <div class="d-grid gap-2">
-                                    <button class="btn btn-lg btn-primary" type="button"><a href="../task.php" style="color: white;"> login</a></button>
+                                    <button class="btn btn-lg btn-primary" type="button"><a href="../task.php" style="color: white;"> Login</a></button>
                                 </div>
                             </div>
                             <div class="row align-items-center">
@@ -57,7 +57,7 @@
                             </div>
                             <div class="row justify-content-start mt-4">
                                 <div class="col">
-                                    <input type="submit" value="Register" name="btnSubmit" class="btn btn-primary mt-4" id="submit_btn">
+                                    <input type="submit" value="Save" name="btnSubmit" class="btn btn-primary mt-4" id="submit_btn">
                                 </div>
                             </div>
                         </div>
@@ -108,8 +108,8 @@
                     echo "<span style='color:red'>$login_id user id already exits!<span>";
                     die();
                 } else {
-                    $sql = "INSERT INTO users (name, logIn_id, password)
-                    VALUES ('$name', '$login_id', '$md5_password')";
+                    $sql = "INSERT INTO users (name, logIn_id, password,category)
+                    VALUES ('$name', '$login_id', '$md5_password', '$category')";
 
                     if ($db->query($sql) === TRUE) {
                         echo "New user created successfully";
