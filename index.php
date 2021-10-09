@@ -131,7 +131,7 @@ $sql = "SELECT p.name FROM `person` as p INNER JOIN person_address as pa ON p.id
         <br>
         <h1>Task</h1>
         <span style="color: red;"><b>Please import the db first,which is included in DB folder.<b></span>
-        <p>For Task 1 and Task 2 section click the <b><a href="task.php">LINK</a><b></p>
+        <p>For Task 1 and Task 2 section click the <b><a href="task">LINK</a><b></p>
     </div>
 </body>
 
